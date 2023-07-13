@@ -1,3 +1,6 @@
 [submodule "motif/libs/domain"]
 	path = motif/libs/domain
 	url = git@github.com:bcf23-prometheus/motif-libs-domain.git
+[submodule "motif/libs/rest-exception"]
+	path = motif/libs/rest-exception
+	url = git@github.com:bcf23-prometheus/motif-libs-rest-exeception.git
