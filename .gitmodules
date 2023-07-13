@@ -19,3 +19,6 @@
 [submodule "data/configs"]
 	path = data/configs
 	url = git@github.com:bcf23-prometheus/data-configs.git
+[submodule "data/monitoring"]
+    path = data/monitoring
+    url = git@github.com:bcf23-prometheus/data-monitoring.git
