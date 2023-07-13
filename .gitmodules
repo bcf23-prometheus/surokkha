@@ -4,3 +4,6 @@
 [submodule "motif/libs/rest-exception"]
 	path = motif/libs/rest-exception
 	url = git@github.com:bcf23-prometheus/motif-libs-rest-exeception.git
+[submodule "motif/services/user-management-service"]
+	path = motif/services/user-management-service
+	url = git@github.com:bcf23-prometheus/motif-services-user-management.git
