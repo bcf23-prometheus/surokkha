@@ -16,3 +16,6 @@
 [submodule "motif/services/config-service"]
 	path = motif/services/config-service
 	url = git@github.com:bcf23-prometheus/motif-services-config-service.git
+[submodule "data/configs"]
+	path = data/configs
+	url = git@github.com:bcf23-prometheus/data-configs.git
