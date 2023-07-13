@@ -1,0 +1,15 @@
+version: '3.9'
+
+
+services:
+  config-service-build:
+    image: amazoncorretto:17
+    volumes:
+      - ./motif/services/config-service:/app/motif/services/config-service
+      - gradle-cache:/root/.gradle
+    working_dir: /app/motif/services/config-service
+    command: ./gradlew clean bootJar -x test
+
+
+volumes:
+  gradle-cache:

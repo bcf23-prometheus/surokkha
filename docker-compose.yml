@@ -1,0 +1,28 @@
+version: '3.9'
+
+
+services:
+  config-service:
+    image: bcf23prometheus/config-service
+    environment:
+      - CLOUD_CONFIG_GITHUB_TOKEN
+    networks:
+      - surokkha
+    deploy:
+      replicas: 1
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8078/actuator/health" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+
+networks:
+  surokkha:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.137.0/24"
+          gateway: "192.168.137.1"

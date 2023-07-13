@@ -1,0 +1,8 @@
+version: '3.9'
+
+
+services:
+  config-service:
+    image: bcf23prometheus/config-service
+    build:
+      context: ./motif/services/config-service

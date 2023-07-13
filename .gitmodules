@@ -10,3 +10,6 @@
 [submodule "infrastructures/resources"]
 	path = infrastructures/resources
 	url = git@github.com:bcf23-prometheus/infrastructures-resources.git
+[submodule "infrastructures/automation"]
+	path = infrastructures/automation
+	url = git@github.com:bcf23-prometheus/infrastructures-automation.git
