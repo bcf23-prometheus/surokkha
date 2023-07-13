@@ -7,3 +7,6 @@
 [submodule "motif/services/user-management-service"]
 	path = motif/services/user-management-service
 	url = git@github.com:bcf23-prometheus/motif-services-user-management.git
+[submodule "infrastructures/resources"]
+	path = infrastructures/resources
+	url = git@github.com:bcf23-prometheus/infrastructures-resources.git
