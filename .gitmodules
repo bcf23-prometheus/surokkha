@@ -1,0 +1,3 @@
+[submodule "motif/libs/domain"]
+	path = motif/libs/domain
+	url = git@github.com:bcf23-prometheus/motif-libs-domain.git
