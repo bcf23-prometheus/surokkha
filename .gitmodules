@@ -28,3 +28,12 @@
 [submodule "motif/services/api-gateway-service"]
 	path = motif/services/api-gateway-service
 	url = git@github.com:bcf23-prometheus/motif-services-api-gateway-service.git
+[submodule "apps/hospital-service"]
+	path = apps/hospital-service
+	url = git@github.com:bcf23-prometheus/apps-hospital-service.git
+[submodule "motif/services/otp-service"]
+	path = motif/services/otp-service
+	url = git@github.com:bcf23-prometheus/motif-services-otp-service.git
+[submodule "motif/services/notification-service"]
+	path = motif/services/notification-service
+	url = git@github.com:bcf23-prometheus/motif-services-notification-service.git
