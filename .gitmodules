@@ -4,24 +4,27 @@
 [submodule "motif/libs/rest-exception"]
 	path = motif/libs/rest-exception
 	url = git@github.com:bcf23-prometheus/motif-libs-rest-exeception.git
-[submodule "motif/services/user-management-service"]
-	path = motif/services/user-management-service
-	url = git@github.com:bcf23-prometheus/motif-services-user-management.git
 [submodule "infrastructures/resources"]
 	path = infrastructures/resources
 	url = git@github.com:bcf23-prometheus/infrastructures-resources.git
 [submodule "infrastructures/automation"]
 	path = infrastructures/automation
 	url = git@github.com:bcf23-prometheus/infrastructures-automation.git
-[submodule "motif/services/config-service"]
-	path = motif/services/config-service
-	url = git@github.com:bcf23-prometheus/motif-services-config-service.git
 [submodule "data/configs"]
 	path = data/configs
 	url = git@github.com:bcf23-prometheus/data-configs.git
 [submodule "data/monitoring"]
     path = data/monitoring
     url = git@github.com:bcf23-prometheus/data-monitoring.git
+[submodule "motif/services/config-service"]
+	path = motif/services/config-service
+	url = git@github.com:bcf23-prometheus/motif-services-config-service.git
+[submodule "motif/services/user-management-service"]
+	path = motif/services/user-management-service
+	url = git@github.com:bcf23-prometheus/motif-services-user-management.git
 [submodule "motif/services/discovery-service"]
 	path = motif/services/discovery-service
 	url = git@github.com:bcf23-prometheus/motif-services-discovery-service.git
+[submodule "motif/services/api-gateway-service"]
+	path = motif/services/api-gateway-service
+	url = git@github.com:bcf23-prometheus/motif-services-api-gateway-service.git
