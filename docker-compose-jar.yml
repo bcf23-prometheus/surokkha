@@ -5,11 +5,35 @@ services:
   config-service-build:
     image: amazoncorretto:17
     volumes:
-      - ./motif/services/config-service:/app/motif/services/config-service
+      - ./:/app
       - gradle-cache:/root/.gradle
     working_dir: /app/motif/services/config-service
-    command: ./gradlew clean bootJar -x test
+    command: ./gradlew clean bootJar
+    networks:
+      - surokkha
 
+  discovery-service-build:
+    image: amazoncorretto:17
+    volumes:
+      - ./:/app
+      - gradle-cache:/root/.gradle
+    working_dir: /app/motif/services/discovery-service
+    command: ./gradlew clean bootJar
+    networks:
+      - surokkha
+
+  user-management-service-build:
+    image: amazoncorretto:17
+    volumes:
+      - ./:/app
+      - gradle-cache:/root/.gradle
+    working_dir: /app/motif/services/user-management-service
+    command: ./gradlew clean bootJar
+    networks:
+      - surokkha
 
 volumes:
   gradle-cache:
+
+networks:
+  surokkha:

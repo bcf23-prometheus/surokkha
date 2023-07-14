@@ -6,6 +6,7 @@ services:
     image: bcf23prometheus/config-service
     environment:
       - CLOUD_CONFIG_GITHUB_TOKEN
+      - spring.profiles.active=dev
     networks:
       - surokkha
     deploy:
@@ -17,6 +18,44 @@ services:
       retries: 10
       start_period: 10s
 
+  discovery-service:
+    image: bcf23prometheus/discovery-service
+    environment:
+      - spring.cloud.config.enabled=true
+      - spring.config.import=optional:configserver:http://config-service:8078
+      - spring.profiles.active=dev
+    networks:
+      - surokkha
+    deploy:
+      replicas: 1
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8078/actuator/health" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    depends_on:
+      - config-service
+
+  user-management-service:
+    image: bcf23prometheus/user-management-service
+    environment:
+      - spring.cloud.config.enabled=true
+      - spring.config.import=optional:configserver:http://config-service:8078
+      - spring.profiles.active=dev
+    networks:
+      - surokkha
+    deploy:
+      replicas: 1
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8078/actuator/health" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+    depends_on:
+      - config-service
+      - discovery-service
 
 networks:
   surokkha:
