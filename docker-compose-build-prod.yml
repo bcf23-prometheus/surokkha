@@ -1,0 +1,23 @@
+version: '3.9'
+
+
+services:
+  config-service:
+    image: bcf23prometheus/config-service
+    build:
+      context: /var/lib/jenkins/workspace/bcf23-surokkha_release/motif/services/config-service
+
+  discovery-service:
+    image: bcf23prometheus/discovery-service
+    build:
+      context: /var/lib/jenkins/workspace/bcf23-surokkha_release/motif/services/discovery-service
+
+  user-management-service:
+    image: bcf23prometheus/user-management-service
+    build:
+      context: /var/lib/jenkins/workspace/bcf23-surokkha_release/motif/services/user-management-service
+
+  api-gateway-service:
+    image: bcf23prometheus/api-gateway-service
+    build:
+      context: /var/lib/jenkins/workspace/bcf23-surokkha_release/motif/services/api-gateway-service

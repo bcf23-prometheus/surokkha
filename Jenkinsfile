@@ -10,7 +10,7 @@ pipeline {
     stage('Find directory'){
         steps{
             sh 'pwd'
-            sh 'ls -laR'
+            sh 'ls -la'
         }
     }
 
@@ -22,7 +22,7 @@ pipeline {
 
     stage('Build') {
       steps {
-       sh 'docker compose -f docker-compose-build.yml build'
+       sh 'docker compose -f docker-compose-build-prod.yml build'
       }
     }
 
@@ -34,7 +34,7 @@ pipeline {
 
     stage('Push') {
       steps {
-         sh 'docker compose -f docker-compose-build.yml push'
+         sh 'docker compose -f docker-compose-build-prod.yml push'
       }
     }
   }
