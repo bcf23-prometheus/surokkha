@@ -13,9 +13,6 @@
 [submodule "data/configs"]
 	path = data/configs
 	url = https://github.com/bcf23-prometheus/data-configs.git
-[submodule "data/monitoring"]
-    path = data/monitoring
-    url = https://github.com/bcf23-prometheus/data-monitoring.git
 [submodule "motif/services/config-service"]
 	path = motif/services/config-service
 	url = https://github.com/bcf23-prometheus/motif-services-config-service.git
