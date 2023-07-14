@@ -14,13 +14,6 @@ pipeline {
         }
     }
 
-    steps('Update submodules') {
-        steps {
-            sh 'git submodule sync'
-            sh 'git submodule update --init --recursive'
-        }
-    }
-
     stage('Create Jar') {
       steps {
             sh 'docker compose -f docker-compose-jar.yml up'
