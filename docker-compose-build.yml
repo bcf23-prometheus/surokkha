@@ -16,3 +16,8 @@ services:
     image: bcf23prometheus/user-management-service
     build:
       context: ./motif/services/user-management-service
+
+  api-gateway-service:
+    image: bcf23prometheus/api-gateway-service
+    build:
+      context: ./motif/services/api-gateway-service
