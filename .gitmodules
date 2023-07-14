@@ -1,39 +1,39 @@
 [submodule "motif/libs/domain"]
 	path = motif/libs/domain
-	url = git@github.com:bcf23-prometheus/motif-libs-domain.git
+	url = https://github.com/bcf23-prometheus/motif-libs-domain.git
 [submodule "motif/libs/rest-exception"]
 	path = motif/libs/rest-exception
-	url = git@github.com:bcf23-prometheus/motif-libs-rest-exeception.git
+	url = https://github.com/bcf23-prometheus/motif-libs-rest-exeception.git
 [submodule "infrastructures/resources"]
 	path = infrastructures/resources
-	url = git@github.com:bcf23-prometheus/infrastructures-resources.git
+	url = https://github.com/bcf23-prometheus/infrastructures-resources.git
 [submodule "infrastructures/automation"]
 	path = infrastructures/automation
-	url = git@github.com:bcf23-prometheus/infrastructures-automation.git
+	url = https://github.com/bcf23-prometheus/infrastructures-automation.git
 [submodule "data/configs"]
 	path = data/configs
-	url = git@github.com:bcf23-prometheus/data-configs.git
+	url = https://github.com/bcf23-prometheus/data-configs.git
 [submodule "data/monitoring"]
     path = data/monitoring
-    url = git@github.com:bcf23-prometheus/data-monitoring.git
+    url = https://github.com/bcf23-prometheus/data-monitoring.git
 [submodule "motif/services/config-service"]
 	path = motif/services/config-service
-	url = git@github.com:bcf23-prometheus/motif-services-config-service.git
+	url = https://github.com/bcf23-prometheus/motif-services-config-service.git
 [submodule "motif/services/user-management-service"]
 	path = motif/services/user-management-service
-	url = git@github.com:bcf23-prometheus/motif-services-user-management.git
+	url = https://github.com/bcf23-prometheus/motif-services-user-management.git
 [submodule "motif/services/discovery-service"]
 	path = motif/services/discovery-service
-	url = git@github.com:bcf23-prometheus/motif-services-discovery-service.git
+	url = https://github.com/bcf23-prometheus/motif-services-discovery-service.git
 [submodule "motif/services/api-gateway-service"]
 	path = motif/services/api-gateway-service
-	url = git@github.com:bcf23-prometheus/motif-services-api-gateway-service.git
+	url = https://github.com/bcf23-prometheus/motif-services-api-gateway-service.git
 [submodule "apps/hospital-service"]
 	path = apps/hospital-service
-	url = git@github.com:bcf23-prometheus/apps-hospital-service.git
+	url = https://github.com/bcf23-prometheus/apps-hospital-service.git
 [submodule "motif/services/otp-service"]
 	path = motif/services/otp-service
-	url = git@github.com:bcf23-prometheus/motif-services-otp-service.git
+	url = https://github.com/bcf23-prometheus/motif-services-otp-service.git
 [submodule "motif/services/notification-service"]
 	path = motif/services/notification-service
-	url = git@github.com:bcf23-prometheus/motif-services-notification-service.git
+	url = https://github.com/bcf23-prometheus/motif-services-notification-service.git
